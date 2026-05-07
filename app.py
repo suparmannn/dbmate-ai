@@ -284,7 +284,7 @@ with st.sidebar:
         st.error("🔴 Disconnected")
 
 # ========== MAIN CONTENT ==========
-col_header_left, col_header_right = st.columns([1, 8])
+col_header_left, col_header_right = st.columns([1, 6])
 
 with col_header_left:
     lottie_robot = load_lottie_file("assets/database.json") 
