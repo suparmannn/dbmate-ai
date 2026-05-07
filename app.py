@@ -192,9 +192,10 @@ with st.sidebar:
         
                 #Buat Save Konfig
         st.session_state.db_config = db_config
-        os.makedirs(".streamlit", exist_ok=True)
-        with open(".streamlit/db_config.json", "w") as f:
-            json.dump(db_config, f)
+        # os.makedirs(".streamlit", exist_ok=True) <-- ini untuk save ke json terkait config dbnya
+        # with open(".streamlit/db_config.json", "w") as f:
+        #     json.dump(db_config, f)
+            
         with st.spinner("🔄 Menghubungkan ke database..."):
             success, message = st.session_state.db_manager.connect(db_config)
 
