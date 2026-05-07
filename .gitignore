@@ -1,0 +1,20 @@
+# Environment variables (token API)
+.env
+
+# Konfigurasi database (ada password)
+.streamlit/db_config.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
